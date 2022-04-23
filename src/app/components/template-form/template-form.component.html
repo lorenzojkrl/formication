@@ -1,1 +1,31 @@
-<p>template-form works!</p>
+<h2>Template Form</h2>
+<div>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" [(ngModel)]="name" required />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" />
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" [(ngModel)]="age" />
+    </div>
+    <div>
+      <label for="preference">Preference</label>
+      <select
+        id="preference"
+        name="preference"
+        [(ngModel)]="preference"
+        required
+      >
+        <option *ngFor="let pref of preferences" [value]="pref">
+          {{ pref }}
+        </option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
