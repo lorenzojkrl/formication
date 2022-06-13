@@ -26,6 +26,6 @@
         </option>
       </select>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" [disabled]="f.status === 'INVALID'">Submit</button>
   </form>
 </div>
