@@ -1,3 +1,24 @@
 .ng-invalid:not(form) {
   border-left: 5px solid #a94442; /* red */
 }
+
+form {
+  background-color: beige;
+  padding: 10px;
+}
+
+.form-el {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input,
+select {
+  border-radius: 5px;
+  min-width: 150px;
+}
