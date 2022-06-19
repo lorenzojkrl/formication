@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -7,5 +7,9 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./reactive-form.component.css'],
 })
 export class ReactiveFormComponent {
-  email = new FormControl('');
+  reactiveForm = new FormGroup({
+    name: new FormControl(''),
+    email: new FormControl(''),
+    age: new FormControl(''),
+  });
 }
