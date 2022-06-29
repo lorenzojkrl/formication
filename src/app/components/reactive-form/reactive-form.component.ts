@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -8,7 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class ReactiveFormComponent {
   reactiveForm = new FormGroup({
-    name: new FormControl(''),
+    name: new FormControl('', Validators.required),
     email: new FormControl(''),
     age: new FormControl(''),
   });
