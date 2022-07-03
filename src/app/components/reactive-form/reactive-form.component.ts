@@ -12,4 +12,8 @@ export class ReactiveFormComponent {
     email: new FormControl(''),
     age: new FormControl(''),
   });
+
+  onSubmit() {
+    console.log('form: ', this.reactiveForm);
+  }
 }
