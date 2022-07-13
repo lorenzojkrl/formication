@@ -10,7 +10,11 @@ export class ReactiveFormComponent {
   reactiveForm = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl(''),
-    age: new FormControl(''),
+    age: new FormControl('', [
+      Validators.required,
+      Validators.max(99),
+      Validators.min(18),
+    ]),
   });
 
   onSubmit() {
