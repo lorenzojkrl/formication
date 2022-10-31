@@ -1,0 +1,9 @@
+nav {
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+nav > div {
+  padding: 0 10px;
+}
