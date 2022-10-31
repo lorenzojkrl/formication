@@ -1,1 +1,5 @@
-<p>wish-list works!</p>
+<h2>Wish List</h2>
+
+<ul>
+  <li *ngFor="let book of wishList$ | async">{{ book }}</li>
+</ul>

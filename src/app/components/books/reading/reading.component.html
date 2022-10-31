@@ -1,1 +1,5 @@
-<p>reading works!</p>
+<h2>Reading</h2>
+
+<ul>
+  <li *ngFor="let book of reading$ | async">{{ book }}</li>
+</ul>
