@@ -1,5 +1,9 @@
-<h2>Wish List</h2>
+<div class="list">
+  <h2>Wish List</h2>
 
-<ul>
-  <li *ngFor="let book of wishList$ | async">{{ book }}</li>
-</ul>
+  <ul>
+    <li *ngFor="let book of wishList$ | async" (click)="move(book)">
+      {{ book }}
+    </li>
+  </ul>
+</div>

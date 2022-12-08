@@ -1,7 +1,7 @@
 .books {
-  width: 700px;
-  background-color: antiquewhite;
+  width: 1200px;
+  background-color: rgba(234, 140, 160, 36%);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 50px 100px;
 }
