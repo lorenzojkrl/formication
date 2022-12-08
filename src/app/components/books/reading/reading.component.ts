@@ -5,7 +5,6 @@ import { BooksStore } from '../books.store';
   selector: 'app-reading',
   templateUrl: './reading.component.html',
   styleUrls: ['./reading.component.css'],
-  providers: [BooksStore],
 })
 export class ReadingComponent {
   reading$ = this.booksStore.reading$;

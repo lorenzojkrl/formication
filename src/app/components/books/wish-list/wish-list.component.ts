@@ -5,8 +5,6 @@ import { BooksStore } from '../books.store';
   selector: 'app-wish-list',
   templateUrl: './wish-list.component.html',
   styleUrls: ['./wish-list.component.css'],
-  // Inject the store in the component
-  providers: [BooksStore],
 })
 export class WishListComponent {
   // use the store to access the property we need
