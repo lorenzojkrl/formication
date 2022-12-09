@@ -2,7 +2,7 @@
   <h2>Wish List</h2>
 
   <ul>
-    <li *ngFor="let book of wishList$ | async" (click)="move(book)">
+    <li *ngFor="let book of wishList$ | async" (click)="handleClick(book)">
       {{ book }}
     </li>
   </ul>

@@ -12,4 +12,8 @@ export class WishListComponent {
 
   // declare the store in the constructor
   constructor(private readonly booksStore: BooksStore) {}
+
+  handleClick(title: string) {
+    this.booksStore.moveToReading(title);
+  }
 }
