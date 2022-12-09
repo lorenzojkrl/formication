@@ -10,4 +10,14 @@ export class ReadingComponent {
   reading$ = this.booksStore.reading$;
 
   constructor(private readonly booksStore: BooksStore) {}
+
+  handleClick(title: string) {
+    this.booksStore.setState((state) => ({
+      ...state,
+      reading: [
+        ...state.reading.filter((titleInList) => titleInList !== title),
+      ],
+      history: [...state.history, title],
+    }));
+  }
 }

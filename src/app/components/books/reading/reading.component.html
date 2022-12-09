@@ -2,6 +2,8 @@
   <h2>Reading</h2>
 
   <ul>
-    <li *ngFor="let book of reading$ | async">{{ book }}</li>
+    <li *ngFor="let book of reading$ | async" (click)="handleClick(book)">
+      {{ book }}
+    </li>
   </ul>
 </div>
