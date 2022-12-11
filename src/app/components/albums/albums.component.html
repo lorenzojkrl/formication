@@ -1,0 +1,9 @@
+<div>
+  <h2>Albums</h2>
+
+  <ul>
+    <li *ngFor="let album of albums$ | async">
+      {{ album.title }}
+    </li>
+  </ul>
+</div>
